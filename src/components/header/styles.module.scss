@@ -1,0 +1,92 @@
+$btn_radius: 10px;
+$btn_color1: #fff;
+$btn_color2: #000;
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('../../assets/fonts/')
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 90px;
+  border-bottom: 1px solid #fff;
+  background-color: $btn_color2;
+  color: #fff;
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
+  }
+
+  .navRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+
+    .MenuButtonIcon {
+      display: none;
+      padding: 0;
+      color: #fff;
+
+      @media (max-width: 480px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .Menu {
+        .MenuItem {
+          color: #000;
+        }
+      }
+    }
+
+    .Button1 {
+      width: 87px;
+      border-radius: $btn_radius;
+      border: 1px solid #fff;
+      background-color: $btn_color2;
+      color: $btn_color1;
+      text-transform: none;
+      font-weight: 900;
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    .Button2 {
+      border-radius: $btn_radius;
+      background-color: $btn_color1;
+      color: $btn_color2;
+      text-transform: none;
+      font-weight: 900;
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 769px) {
+      column-gap: 10px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 16px;
+  }
+}

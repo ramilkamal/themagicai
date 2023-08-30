@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 25px;
+
+  .containerLeft {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 90px;
+
+    .containerText {
+      h1 {
+        font-size: 70px;
+        font-family: 'Montserrat', sans-serif;
+        padding-bottom: 25px;
+        font-weight: 600;
+
+        @media (max-width: 1024px) {
+          font-size: 60px;
+        }
+
+        @media (max-width: 769px) {
+          font-size: 60px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 50px;
+        }
+
+        @media (max-width: 320px) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 22px;
+      }
+    }
+
+    .Button {
+      width: 160px;
+      height: 45px;
+      border-radius: 25px;
+      background: linear-gradient(0.25turn, #139ebc, #aa1ecd);
+      text-transform: none;
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      align-items: center;
+    }
+  }
+
+  img {
+    width: 531px;
+    height: 531px;
+
+    @media (max-width: 1024px) {
+      width: 420px;
+      height: 420px;
+    }
+
+    @media (max-width: 769px) {
+      width: 440px;
+      height: 440px;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 480px) {
+      width: 320px;
+      height: 320px;
+      margin-right: 0;
+    }
+
+    @media (max-width: 320px) {
+      width: 300px;
+      height: 300px;
+      margin-top: 80px;
+      margin-left: 0;
+      margin-right: 25px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+  }
+
+  @media (max-width: 769px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0;
+  }
+}
