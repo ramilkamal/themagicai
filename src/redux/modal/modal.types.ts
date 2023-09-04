@@ -1,4 +1,4 @@
-export interface IModal {
+export interface ModalTypes {
   isModalOpen: boolean;
   isModalOpen2: boolean;
   isModalOpen3: boolean;

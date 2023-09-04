@@ -31,7 +31,6 @@ export const CVPage: React.FC = () => {
 
   return (
     <div className={styles.cv}>
-      <Header />
       <div className={styles.cvContainer}>
         <div className={styles.cvCont}>
           <div className={styles.vacancyRequirement}>
@@ -134,7 +133,6 @@ export const CVPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

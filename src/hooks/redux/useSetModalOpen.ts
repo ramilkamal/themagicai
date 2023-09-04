@@ -4,7 +4,7 @@ import {
   setIsModalOpen3,
   setIsModalOpen4,
 } from "../../redux/modal/moda.slice";
-import { useAppDispatch } from "../redux/hooks";
+import { useAppDispatch } from "./useAppDispatch";
 
 export const useSetModalOpen = () => {
   const dispatch = useAppDispatch();
@@ -12,11 +12,12 @@ export const useSetModalOpen = () => {
   const handleClick2 = () => dispatch(setIsModalOpen2(true));
   const handleClick3 = () => dispatch(setIsModalOpen3(true));
   const handleClick4 = () => dispatch(setIsModalOpen4(true));
+  
   return {
+    dispatch,
     handleClick,
     handleClick2,
     handleClick3,
     handleClick4,
-    dispatch,
   };
 };

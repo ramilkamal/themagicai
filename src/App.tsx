@@ -9,11 +9,11 @@ function App() {
     <div className={styles.App}>
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Layout />}> */}
-          <Route index element={<HomePage />} />
-          <Route path="cv" element={<CVPage />} />
-          <Route path="*" element={<ErrorPage />} />
-          {/* </Route> */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="cv" element={<CVPage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Route>
         </Routes>
       </Router>
       <Toaster position="top-right" />

@@ -11,7 +11,7 @@ export const Layout: React.FC = () => {
   return (
     <>
       <Header />
-      {token ? <Navigate to="/cv" /> : <HomePage />}
+      {token ? <CVPage /> : <HomePage />}
       <Footer />
     </>
   );
