@@ -9,14 +9,15 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  // box-shadow: 0 0 10px 10px #aa1ecd;
   background-color: #333;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #aa1ecd;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 5px #aa1ecd;
 }

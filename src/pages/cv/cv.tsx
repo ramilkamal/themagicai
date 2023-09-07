@@ -78,9 +78,7 @@ export const CVPage: React.FC = () => {
                 >
                   <MenuItem className={styles.MenuItem}>Specialist</MenuItem>
                   <MenuItem className={styles.MenuItem}>Manager</MenuItem>
-                  <MenuItem className={styles.MenuItem}>
-                    Senior manager
-                  </MenuItem>
+                  <MenuItem className={styles.MenuItem}>Senior manager</MenuItem>
                   <MenuItem className={styles.MenuItem}>Head</MenuItem>
                   <MenuItem className={styles.MenuItem}>Director</MenuItem>
                   <MenuItem className={styles.MenuItem}>Executive</MenuItem>
