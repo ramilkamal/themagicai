@@ -11,8 +11,7 @@ export const Layout: React.FC = () => {
   return (
     <>
       <Header />
-      <CVPage />
-      {/* {token ? <CVPage /> : <HomePage />} */}
+      {token ? <CVPage /> : <HomePage />}
       <Footer />
     </>
   );
