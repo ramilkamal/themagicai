@@ -1,8 +1,10 @@
+$colorBackInput: #222;
+
 .home {
   color: #fff;
 
   .backgroundImage {
-    background-image: url('../../assets/images/Background.webp');
+    background-color: $colorBackInput;;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }

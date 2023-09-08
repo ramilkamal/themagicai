@@ -2,13 +2,8 @@ $colorBackInput: #353535;
 $colorInputText: #9c9c9c;
 $inputBorderRadius: 12px;
 
-@font-face {
-  font-family: 'Lobster';
-  src: url('../../assets/fonts/')
-}
-
 @mixin Typography {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   font-weight: 800;
   margin-bottom: 20px;
 
@@ -65,7 +60,7 @@ $inputBorderRadius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/images/Background.webp');
+    background-color: #444;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 

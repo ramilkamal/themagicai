@@ -6,9 +6,8 @@ import {
   InputAdornment,
   IconButton,
 } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import { ReactComponent as EyeVisibilitiy } from '../../assets/icons/eye-solid.svg';
-import { ReactComponent as EyeVisibilitiyOff } from '../../assets/icons/eye-slash-solid.svg';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useRegisterAuthMutation } from '../../redux/index.endpoints';
@@ -106,11 +105,7 @@ export const Register: React.FC = () => {
                 onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
-                {showPassword1 ? (
-                  <EyeVisibilitiy className={styles.EyeVisibilitiyOff} />
-                ) : (
-                  <EyeVisibilitiyOff className={styles.EyeVisibilitiy} />
-                )}
+                {showPassword1 ? <Visibility /> : <VisibilityOff />}
               </IconButton>
             </InputAdornment>
           }
@@ -135,11 +130,7 @@ export const Register: React.FC = () => {
                 onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
-                {showPassword2 ? (
-                  <EyeVisibilitiy className={styles.EyeVisibilitiyOff} />
-                ) : (
-                  <EyeVisibilitiyOff className={styles.EyeVisibilitiy} />
-                )}
+                {showPassword2 ? <Visibility /> : <VisibilityOff />}
               </IconButton>
             </InputAdornment>
           }

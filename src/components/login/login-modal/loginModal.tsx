@@ -3,18 +3,15 @@ import Cookies from 'js-cookie';
 import {
   Box,
   Button,
-  Typography,
   Modal,
   OutlinedInput,
   InputAdornment,
   IconButton,
 } from '@mui/material';
-import { ReactComponent as EyeVisibilitiy } from '../../../assets/icons/eye-solid.svg';
-import { ReactComponent as EyeVisibilitiyOff } from '../../../assets/icons/eye-slash-solid.svg';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useLoginAuthMutation } from '../../../redux/index.endpoints';
-import styles from './styles.module.scss';
 
 const modalFormStyle = {
   position: 'absolute',
@@ -65,7 +62,7 @@ export const LoginModal: React.FC = () => {
   }, [isSuccess]);
 
   return (
-    <div className={styles.login}>
+    <div>
       <Modal open={open} onClose={closeModal}>
         <Box
           sx={modalFormStyle}
@@ -87,7 +84,7 @@ export const LoginModal: React.FC = () => {
             })}
           />
           {errors.email && (
-            <span className={styles.inputError}>error email input !</span>
+            <span>error email input !</span>
           )}
           <OutlinedInput
             type={showPassword ? 'text' : 'password'}
@@ -106,13 +103,13 @@ export const LoginModal: React.FC = () => {
                   onMouseDown={handleMouseDownPassword}
                   edge="end"
                 >
-                  {showPassword ? <EyeVisibilitiyOff /> : <EyeVisibilitiy />}
+                  {showPassword ? <VisibilityOff /> : <Visibility />}
                 </IconButton>
               </InputAdornment>
             }
           />
           {errors.password && (
-            <span className={styles.inputError}>error password input !</span>
+            <span>error password input !</span>
           )}
           <div>
             <Button variant="contained" color="secondary" onClick={closeModal}>
