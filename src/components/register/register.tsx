@@ -6,7 +6,7 @@ import {
   InputAdornment,
   IconButton,
 } from '@mui/material';
-import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { Visibility, VisibilityOff } from '@mui/icons-material'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
@@ -31,7 +31,11 @@ export const Register: React.FC = () => {
   const handleShowPassword2: React.MouseEventHandler = () =>
     setShowPassword2((show) => !show);
 
-  const handleMouseDownPassword = (
+  const handleMouseDownPassword1 = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => event.preventDefault();
+
+  const handleMouseDownPassword2 = (
     event: React.MouseEvent<HTMLButtonElement>
   ) => event.preventDefault();
 
@@ -102,7 +106,7 @@ export const Register: React.FC = () => {
             <InputAdornment position="end">
               <IconButton
                 onClick={handleShowPassword1}
-                onMouseDown={handleMouseDownPassword}
+                onMouseDown={handleMouseDownPassword1}
                 edge="end"
               >
                 {showPassword1 ? <Visibility /> : <VisibilityOff />}
@@ -127,7 +131,7 @@ export const Register: React.FC = () => {
             <InputAdornment position="end">
               <IconButton
                 onClick={handleShowPassword2}
-                onMouseDown={handleMouseDownPassword}
+                onMouseDown={handleMouseDownPassword2}
                 edge="end"
               >
                 {showPassword2 ? <Visibility /> : <VisibilityOff />}
