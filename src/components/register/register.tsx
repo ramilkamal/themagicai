@@ -31,11 +31,7 @@ export const Register: React.FC = () => {
   const handleShowPassword2: React.MouseEventHandler = () =>
     setShowPassword2((show) => !show);
 
-  const handleMouseDownPassword1 = (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => event.preventDefault();
-
-  const handleMouseDownPassword2 = (
+  const handleMouseDownPassword = (
     event: React.MouseEvent<HTMLButtonElement>
   ) => event.preventDefault();
 
@@ -106,7 +102,7 @@ export const Register: React.FC = () => {
             <InputAdornment position="end">
               <IconButton
                 onClick={handleShowPassword1}
-                onMouseDown={handleMouseDownPassword1}
+                onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
                 {showPassword1 ? <Visibility /> : <VisibilityOff />}
@@ -131,7 +127,7 @@ export const Register: React.FC = () => {
             <InputAdornment position="end">
               <IconButton
                 onClick={handleShowPassword2}
-                onMouseDown={handleMouseDownPassword2}
+                onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
                 {showPassword2 ? <Visibility /> : <VisibilityOff />}
